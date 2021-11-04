@@ -1,7 +1,0 @@
-name: Issues Actions
-on: [issues]
-jobs:
-  Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Issues target ${{ github.event_name }} event."
