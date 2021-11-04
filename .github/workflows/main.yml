@@ -17,9 +17,9 @@ on:
               ls ${{ github.workspace }}
           - run: echo "🍏 This job's status is ${{ job.status }}."
 
-  pull_request:
+  issues:
     jobs:
-    Explore-GitHub-Actions:
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo "Issues target ${{ github.event_name }} event."
+      Explore-GitHub-Actions:
+        runs-on: ubuntu-latest
+        steps:
+          - run: echo "Issues target ${{ github.event_name }} event."
